@@ -1,0 +1,68 @@
+//nav
+
+@mixin nav() {
+    position: fixed;
+    bottom: -80px;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 4;
+    font-weight: 500;
+
+    li {
+        list-style: none;
+        
+
+        a {
+            display: block;
+            text-decoration: none;
+            background: rgba(151, 239, 123, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(31, 135, 121, 0.37);
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            color: $textColorMain;
+            height: 30px;
+            line-height: 30px;
+            font-size: 2vmax;
+            width: 10vmax;
+            margin: 3px 0;
+            padding: 0 15px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+
+            &:hover {
+                transition: 0.2s;
+                background: $leaf;
+                color: $backgroundMain;
+                box-shadow: 5px 0px 25px #ffffbd73;
+            }
+        }
+    }
+
+}
+
+
+//
+
+
+h1 {
+    padding: 10%;
+}
+
+p {
+    padding: 0 7%;
+}
+
+//@mix-in
+@mixin greenGlass {
+    background: rgba(151, 239, 123, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 135, 121, 0.37);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin: 5vw;
+    padding: 5vh;
+    text-shadow: 2px 2px $bgSecond;
+}
+
